@@ -1,0 +1,127 @@
+{
+  "sid": "sid-20251012-034217-8cf91345",
+  "created_at": "2025-10-12T04:26:20+00:00",
+  "inputs": {
+    "as_is_bpmn": "C:\\DEV\\MA\\data\\sdl\\sid-20251012-034217-8cf91345\\interpretation\\ist_bpmn_sid-20251012-034217-8cf91345.bpmn",
+    "to_be_bpmn": "C:\\DEV\\MA\\data\\sdl\\sid-20251012-034217-8cf91345\\generation\\tobe_bpmn_sid-20251012-034217-8cf91345_v3_20251012-042609.bpmn"
+  },
+  "time_improvements": {
+    "cycle_mean_pct": 99.97767857142857,
+    "cycle_p50_pct": 99.97991071428571,
+    "cycle_p90_pct": 99.97098214285714,
+    "cycle_mean_delta_s": -604665.0,
+    "cycle_p90_delta_s": -604624.5
+  },
+  "sla_compliance": {
+    "has_sla": false,
+    "sla_met": false,
+    "on_time_rate": null,
+    "details": {}
+  },
+  "cost_analysis": null,
+  "structural_quality": {
+    "valid": true,
+    "issues": [
+      {
+        "type": "mixed_gateway",
+        "severity": "warning",
+        "element_id": "GW_Accepted",
+        "description": "Gateway GW_Accepted acts as both split and join"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_PostGWToJoin2",
+        "description": "Flow from XOR gateway GW_PostDetailed missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_PostGWToValidation",
+        "description": "Flow from XOR gateway GW_PostDetailed missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_ValidToJoin2",
+        "description": "Flow from XOR gateway GW_ValidationDecision missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_IncompleteToAIncomplete",
+        "description": "Flow from XOR gateway GW_ValidationDecision missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_FastLaneToMonitor",
+        "description": "Flow from XOR gateway GW_ValidationDecision missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_RespondedYes",
+        "description": "Flow from XOR gateway GW_Responded missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_RespondedNo",
+        "description": "Flow from XOR gateway GW_Responded missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_Accepted",
+        "description": "Flow from XOR gateway GW_Accepted missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_Refused",
+        "description": "Flow from XOR gateway GW_Accepted missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_Cancelled",
+        "description": "Flow from XOR gateway GW_Accepted missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_MonitorToEnd",
+        "description": "Flow from XOR gateway GW_Monitor missing condition"
+      }
+    ],
+    "stats": {
+      "task_count": 14,
+      "event_count": 3,
+      "gateway_count": 11,
+      "flow_count": 38,
+      "total_nodes": 28,
+      "gateway_density": 0.39285714285714285
+    }
+  },
+  "risks": [
+    "High gateway density may lead to complex process flow and confusion",
+    "High automation may reduce flexibility and human oversight"
+  ],
+  "benefits": [
+    "Average cycle time reduced by 100.0%",
+    "90th percentile time improved by 100.0%",
+    "Process structure is valid and well-formed"
+  ],
+  "score": 51.0,
+  "recommendation": {
+    "type": "proceed_with_caveats",
+    "rationale": "Process shows moderate improvements (score 51/100). Consider addressing identified issues during implementation."
+  },
+  "summary": {
+    "improvements_achieved": 3,
+    "risks_identified": 2,
+    "structural_issues": 12,
+    "ready_for_implementation": false
+  }
+}

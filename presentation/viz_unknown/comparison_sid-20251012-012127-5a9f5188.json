@@ -1,0 +1,133 @@
+{
+  "sid": "sid-20251012-012127-5a9f5188",
+  "created_at": "2025-10-12T02:15:47+00:00",
+  "inputs": {
+    "as_is_bpmn": "C:\\DEV\\MA\\data\\sdl\\sid-20251012-012127-5a9f5188\\interpretation\\ist_bpmn_sid-20251012-012127-5a9f5188.bpmn",
+    "to_be_bpmn": "C:\\DEV\\MA\\data\\sdl\\sid-20251012-012127-5a9f5188\\generation\\tobe_bpmn_sid-20251012-012127-5a9f5188_v3_20251012-021536.bpmn"
+  },
+  "time_improvements": {
+    "cycle_mean_pct": 99.97933201058201,
+    "cycle_p50_pct": 99.98139880952381,
+    "cycle_p90_pct": 99.97313161375662,
+    "cycle_mean_delta_s": -604675.0,
+    "cycle_p90_delta_s": -604637.5
+  },
+  "sla_compliance": {
+    "has_sla": false,
+    "sla_met": false,
+    "on_time_rate": null,
+    "details": {}
+  },
+  "cost_analysis": null,
+  "structural_quality": {
+    "valid": false,
+    "issues": [
+      {
+        "type": "disconnected_element",
+        "severity": "error",
+        "element_id": "AuditLog",
+        "description": "Element AuditLog (dataStoreReference) is not connected"
+      },
+      {
+        "type": "disconnected_element",
+        "severity": "error",
+        "element_id": "da_auto_check_audit",
+        "description": "Element da_auto_check_audit (dataOutputAssociation) is not connected"
+      },
+      {
+        "type": "disconnected_element",
+        "severity": "error",
+        "element_id": "da_fraud_audit",
+        "description": "Element da_fraud_audit (dataOutputAssociation) is not connected"
+      },
+      {
+        "type": "disconnected_element",
+        "severity": "error",
+        "element_id": "da_validate_audit",
+        "description": "Element da_validate_audit (dataOutputAssociation) is not connected"
+      },
+      {
+        "type": "disconnected_element",
+        "severity": "error",
+        "element_id": "da_metrics_audit",
+        "description": "Element da_metrics_audit (dataOutputAssociation) is not connected"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "sf_auto_yes",
+        "description": "Flow from XOR gateway gw_auto_check missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "sf_auto_no",
+        "description": "Flow from XOR gateway gw_auto_check missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "sf_auto_ambig",
+        "description": "Flow from XOR gateway gw_auto_check missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "sf_leads_followup_yes",
+        "description": "Flow from XOR gateway gw_leads_followup_decision missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "sf_leads_followup_no",
+        "description": "Flow from XOR gateway gw_leads_followup_decision missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "sf_merge_to_pg2",
+        "description": "Flow from XOR gateway ide6b27643-1e97-489c-9395-e26f1b1d9c7a missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "sf_elig_approve",
+        "description": "Flow from XOR gateway idc94949c7-cb80-4d83-8e16-49fe8062b994 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "sf_elig_reject",
+        "description": "Flow from XOR gateway idc94949c7-cb80-4d83-8e16-49fe8062b994 missing condition"
+      }
+    ],
+    "stats": {
+      "task_count": 16,
+      "event_count": 2,
+      "gateway_count": 10,
+      "flow_count": 35,
+      "total_nodes": 28,
+      "gateway_density": 0.35714285714285715
+    }
+  },
+  "risks": [
+    "Process has 5 structural errors that must be fixed",
+    "High gateway density may lead to complex process flow and confusion",
+    "High automation may reduce flexibility and human oversight"
+  ],
+  "benefits": [
+    "Average cycle time reduced by 100.0%",
+    "90th percentile time improved by 100.0%"
+  ],
+  "score": 9.0,
+  "recommendation": {
+    "type": "re_iterate_generation",
+    "rationale": "Process has 5 structural errors that prevent proper execution. A new version must be generated."
+  },
+  "summary": {
+    "improvements_achieved": 2,
+    "risks_identified": 3,
+    "structural_issues": 13,
+    "ready_for_implementation": false
+  }
+}

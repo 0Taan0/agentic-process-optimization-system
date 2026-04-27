@@ -1,0 +1,86 @@
+{
+  "sid": "sid-20250923-153724-61b52e32",
+  "created_at": "2025-09-23T15:45:54+00:00",
+  "inputs": {
+    "as_is_bpmn": "C:\\DEV\\MA\\data\\sdl\\sid-20250923-153724-61b52e32\\interpretation\\ist_bpmn_sid-20250923-153724-61b52e32.bpmn",
+    "to_be_bpmn": "C:\\DEV\\MA\\data\\sdl\\sid-20250923-153724-61b52e32\\generation\\tobe_bpmn_sid-20250923-153724-61b52e32.bpmn"
+  },
+  "time_improvements": {
+    "cycle_mean_delta_s": 60.0,
+    "cycle_p90_delta_s": 78.0
+  },
+  "sla_compliance": {
+    "has_sla": false,
+    "sla_met": false,
+    "on_time_rate": null,
+    "details": {}
+  },
+  "cost_analysis": null,
+  "structural_quality": {
+    "valid": true,
+    "issues": [
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_4",
+        "description": "Flow from XOR gateway Gateway_CheckComplete missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_5",
+        "description": "Flow from XOR gateway Gateway_CheckComplete missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_26",
+        "description": "Flow from XOR gateway Gateway_Outcome missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_27",
+        "description": "Flow from XOR gateway Gateway_Outcome missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_28",
+        "description": "Flow from XOR gateway Gateway_Outcome missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_29",
+        "description": "Flow from XOR gateway Gateway_Outcome missing condition"
+      }
+    ],
+    "stats": {
+      "task_count": 18,
+      "event_count": 3,
+      "gateway_count": 6,
+      "flow_count": 32,
+      "total_nodes": 27,
+      "gateway_density": 0.2222222222222222
+    }
+  },
+  "risks": [
+    "Minimal time improvement (<5%) may not justify transformation effort",
+    "High automation may reduce flexibility and human oversight"
+  ],
+  "benefits": [
+    "Process structure is valid and well-formed"
+  ],
+  "score": 38.0,
+  "recommendation": {
+    "type": "re_iterate_generation",
+    "rationale": "Low score (38/100) indicates the process needs significant revision. Minimal improvements achieved and/or too many quality issues."
+  },
+  "summary": {
+    "improvements_achieved": 1,
+    "risks_identified": 2,
+    "structural_issues": 6,
+    "ready_for_implementation": false
+  }
+}

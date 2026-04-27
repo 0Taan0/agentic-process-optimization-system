@@ -1,0 +1,80 @@
+{
+  "sid": "sid-20250922-025235-13b96256",
+  "created_at": "2025-09-22T03:01:38+00:00",
+  "inputs": {
+    "as_is_bpmn": "C:\\DEV\\MA\\data\\sdl\\sid-20250922-025235-13b96256\\interpretation\\ist_bpmn_sid-20250922-025235-13b96256.bpmn",
+    "to_be_bpmn": "C:\\DEV\\MA\\data\\sdl\\sid-20250922-025235-13b96256\\generation\\tobe_bpmn_sid-20250922-025235-13b96256.bpmn"
+  },
+  "time_improvements": {
+    "cycle_mean_delta_s": 105.0,
+    "cycle_p90_delta_s": 136.5
+  },
+  "sla_compliance": {
+    "has_sla": false,
+    "sla_met": false,
+    "on_time_rate": null,
+    "details": {}
+  },
+  "cost_analysis": null,
+  "structural_quality": {
+    "valid": true,
+    "issues": [
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_5",
+        "description": "Flow from XOR gateway Gateway_1 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_6",
+        "description": "Flow from XOR gateway Gateway_1 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_13",
+        "description": "Flow from XOR gateway Gateway_2 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_14",
+        "description": "Flow from XOR gateway Gateway_2 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_15",
+        "description": "Flow from XOR gateway Gateway_2 missing condition"
+      }
+    ],
+    "stats": {
+      "task_count": 12,
+      "event_count": 2,
+      "gateway_count": 2,
+      "flow_count": 18,
+      "total_nodes": 16,
+      "gateway_density": 0.125
+    }
+  },
+  "risks": [
+    "Minimal time improvement (<5%) may not justify transformation effort",
+    "High automation may reduce flexibility and human oversight"
+  ],
+  "benefits": [
+    "Process structure is valid and well-formed"
+  ],
+  "score": 40.0,
+  "recommendation": {
+    "type": "re_iterate_generation",
+    "rationale": "Low score (40/100) indicates the process needs significant revision. Minimal improvements achieved and/or too many quality issues."
+  },
+  "summary": {
+    "improvements_achieved": 1,
+    "risks_identified": 2,
+    "structural_issues": 5,
+    "ready_for_implementation": false
+  }
+}

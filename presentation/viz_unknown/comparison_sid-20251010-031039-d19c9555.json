@@ -1,0 +1,537 @@
+{
+  "sid": "sid-20251010-031039-d19c9555",
+  "created_at": "2025-10-10T03:57:24+00:00",
+  "inputs": {
+    "as_is_bpmn": "C:\\DEV\\MA\\data\\sdl\\sid-20251010-031039-d19c9555\\interpretation\\ist_bpmn_sid-20251010-031039-d19c9555.bpmn",
+    "to_be_bpmn": "C:\\DEV\\MA\\data\\sdl\\sid-20251010-031039-d19c9555\\generation\\tobe_bpmn_sid-20251010-031039-d19c9555_v2_20251010-035712.bpmn"
+  },
+  "time_improvements": {
+    "cycle_mean_delta_s": 0.0,
+    "cycle_p90_delta_s": 0.0
+  },
+  "sla_compliance": {
+    "has_sla": false,
+    "sla_met": false,
+    "on_time_rate": null,
+    "details": {}
+  },
+  "cost_analysis": null,
+  "structural_quality": {
+    "valid": true,
+    "issues": [
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id343eaba4-bd40-49c0-8fc6-16211152bbc9",
+        "description": "Flow from XOR gateway id8d4d6c62-355a-4184-91df-cc79a16ddc7b missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id4dcd1ad8-40b4-4d37-82af-f4325835bbd1",
+        "description": "Flow from XOR gateway id9d0aa197-0ab9-4a68-a8a9-083a50de8fc0 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id36817518-dc42-404a-b702-d00a5d9c4605",
+        "description": "Flow from XOR gateway id360a3542-0cd4-4b67-a95e-b62b39dd2484 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "idfcdbbb05-6da4-4035-a956-73b9035c3f39",
+        "description": "Flow from XOR gateway id1519db0f-6886-4f95-b460-6dc3aa944dd2 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id0fb63888-aca8-496c-82db-cffa2d3999bf",
+        "description": "Flow from XOR gateway id7a692317-7369-4690-af09-89be325374fc missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "idcba4fa67-3540-4a88-892a-1e7c9db5ada6",
+        "description": "Flow from XOR gateway id9511587c-2cf8-4dcf-8549-f319fea2a330 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "idf6650634-07bd-4ad0-ac7a-6f6d1d808157",
+        "description": "Flow from XOR gateway id1519db0f-6886-4f95-b460-6dc3aa944dd2 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id2dfed54a-2089-47d2-b421-d4ae7bf9e09a",
+        "description": "Flow from XOR gateway id50e4a43c-2f45-44bc-9940-926566f667a3 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id04bff12e-9d9a-4d4e-af68-8e536104ca00",
+        "description": "Flow from XOR gateway id34b7fb0f-d155-4c2b-a99c-c02602aa5039 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "idea514229-b6c2-451c-8c64-343af3cca42c",
+        "description": "Flow from XOR gateway id0ef4078c-2c25-4d08-a66f-02ee5938f43f missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "ida688cdd9-b4ee-4699-9a9e-8af4eac39d56",
+        "description": "Flow from XOR gateway id9d2bf1fa-85ce-4d97-9466-4f69893071a7 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id437dc92a-6bc5-474e-90d3-b645a46c8d10",
+        "description": "Flow from XOR gateway id1519db0f-6886-4f95-b460-6dc3aa944dd2 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "idf121ed97-7f67-4c5a-aab3-fb04de0fa14f",
+        "description": "Flow from XOR gateway id807d92d4-3705-48a0-9379-e478e3f07017 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id97fbd3e0-a4df-4fcf-bd96-06a938dc58b9",
+        "description": "Flow from XOR gateway id7562c2ea-afd1-44f6-80c5-cf9d89c4e325 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "idbcb1e379-5c1a-4e02-80a4-7f203b126be4",
+        "description": "Flow from XOR gateway id71862d25-ba4c-42f5-89ae-1074b0ad5598 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "ida293035c-2fe1-4590-a437-aad15532c798",
+        "description": "Flow from XOR gateway id904a36cc-f7c9-4a8b-ac95-8544dd5696e8 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id5a79865e-794e-4261-ae98-97e09ca38a86",
+        "description": "Flow from XOR gateway id1519db0f-6886-4f95-b460-6dc3aa944dd2 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "ide12e9b26-9b05-4d9a-b0e5-86c8ee73c749",
+        "description": "Flow from XOR gateway idea65c16c-c58e-4e2b-b059-68c9b312e7da missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id668d2d31-929d-4601-8218-ee09f1ea5091",
+        "description": "Flow from XOR gateway id82b0fcaa-f830-44e0-b6c4-1e613d9a1022 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id1c5bfc2c-3889-4810-b811-74cab1506bf7",
+        "description": "Flow from XOR gateway ide242cd06-fa21-403a-bac7-3d0123be368f missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id7413c502-95ef-445a-a14c-593c4a804ba5",
+        "description": "Flow from XOR gateway id8711ce30-1e5d-4dc4-8d21-593f0b89058c missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id59db52f8-085a-41ae-a16f-170c26cdd01e",
+        "description": "Flow from XOR gateway id807d92d4-3705-48a0-9379-e478e3f07017 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "iddfd343d1-7f61-444b-bd2c-1e37016e79e8",
+        "description": "Flow from XOR gateway id54289350-6942-43c3-8c29-4b4609e6f911 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id17476c43-2efe-463e-a771-a99cbefced99",
+        "description": "Flow from XOR gateway id3aa43c29-8640-45b6-81e5-e9fb28f78698 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id200db3bc-9767-4b61-813e-e8bd19a97f75",
+        "description": "Flow from XOR gateway idb3bc9cf6-86c8-4269-9b5f-91651557e550 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "idf7f2fd10-099d-4d84-a354-11cfb9423e0a",
+        "description": "Flow from XOR gateway id1519db0f-6886-4f95-b460-6dc3aa944dd2 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "idcf8c5b7e-1a0d-4a4e-82c2-7d8f58c0fc4f",
+        "description": "Flow from XOR gateway id34b7fb0f-d155-4c2b-a99c-c02602aa5039 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id625becd4-92f9-4c09-9320-21904f5c0b46",
+        "description": "Flow from XOR gateway id8100abb3-1987-49c1-8739-52d319311462 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id99782dbb-2b41-4317-b052-95c1c0273be0",
+        "description": "Flow from XOR gateway idbd18a8d6-c7d5-4b4d-a276-d60988813e9f missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id1d538767-c457-48d8-9dc1-5f117de93486",
+        "description": "Flow from XOR gateway ided80d5a8-9d22-4c2e-a284-82193856327a missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id770a1401-7b9d-4655-a27c-28863ccc0d59",
+        "description": "Flow from XOR gateway ide4d54a18-85db-4437-9879-fc9030fa71aa missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id3cede0af-0471-4a20-a62a-864e27bbfede",
+        "description": "Flow from XOR gateway id8711ce30-1e5d-4dc4-8d21-593f0b89058c missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "idbc103504-84fe-476b-b5a8-18bfdceaa87e",
+        "description": "Flow from XOR gateway idca725fdb-45d4-4a97-9888-5e27626ac3dd missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id9377df4a-75f1-491d-a1a0-e27ef1718267",
+        "description": "Flow from XOR gateway id03d03289-638e-493e-85f0-dc765b8b17fd missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id2c86dee1-0ac9-4ce9-b0fc-ef08303a949b",
+        "description": "Flow from XOR gateway id3aa43c29-8640-45b6-81e5-e9fb28f78698 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id76454131-ca1d-4a1d-aee5-2d771c7c39d8",
+        "description": "Flow from XOR gateway id966aa14a-b6ea-493c-8e1e-787b9dbd2b82 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "idde4f2752-2756-47e9-a0be-17fb35610508",
+        "description": "Flow from XOR gateway id03fe391e-6d3c-4e81-829a-bd819b351150 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id04721c3c-6acf-42b8-92e9-63eb816ca2e3",
+        "description": "Flow from XOR gateway idbe394e05-06c0-44a4-8a61-0a2b14d01d7d missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id8a24006e-cff3-4e60-acd2-44efe57e0fbb",
+        "description": "Flow from XOR gateway idf0c4ce00-22f9-4243-b8cf-b5f3b4ffee5e missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "idd999c81c-06bc-4f46-8192-8be6351cfa22",
+        "description": "Flow from XOR gateway idf1ee5376-d992-4593-86ee-07ea66b1248e missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id602b5820-b837-42fe-8f73-28dfa009f3ff",
+        "description": "Flow from XOR gateway ide1c9bba6-0544-4909-b43e-b6aab38b55a5 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id8ef0896c-5687-4e8f-8b40-1c0089d09155",
+        "description": "Flow from XOR gateway id7050c130-9a2f-48e6-9565-5e0d426bc25b missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id52041ec1-5f2b-4d74-a78a-c101729c762a",
+        "description": "Flow from XOR gateway idd4aa97bf-7481-4013-acdf-700ff9dd9b59 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id6d511d4e-9825-437c-9f12-ea7ba2e74c02",
+        "description": "Flow from XOR gateway id7050c130-9a2f-48e6-9565-5e0d426bc25b missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id964bf3f4-cec7-42a0-a96c-1b80059420eb",
+        "description": "Flow from XOR gateway idbeb0e33a-6a8c-4aba-9b40-5db28472b6cb missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id921bd6e3-9d9f-4507-a9b7-ddc5f1cde6cf",
+        "description": "Flow from XOR gateway id71862d25-ba4c-42f5-89ae-1074b0ad5598 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id5600ae67-25a6-494d-ae2e-5929bc8f2014",
+        "description": "Flow from XOR gateway ided80d5a8-9d22-4c2e-a284-82193856327a missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id55fd92cc-4256-4b68-93e7-da3bcc7723f8",
+        "description": "Flow from XOR gateway id9207a1b2-c42a-4198-9bea-c583047afa30 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id0dbf594b-4aa3-4992-acaf-925d5c932e08",
+        "description": "Flow from XOR gateway idf6039c80-ff77-4193-b23a-2c06c6709e0d missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "idbc9ec43a-a8e6-4d2d-a20a-4ffe3a800bc8",
+        "description": "Flow from XOR gateway id71862d25-ba4c-42f5-89ae-1074b0ad5598 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id2d120c27-2559-44f2-8cb6-b2e06869a83f",
+        "description": "Flow from XOR gateway id2b41fce0-c73f-4221-9520-74e157f64d06 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "idf4603e53-f405-4780-9224-82c51154fe23",
+        "description": "Flow from XOR gateway id82b0fcaa-f830-44e0-b6c4-1e613d9a1022 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "idfd101762-131a-4ae7-bf5a-0981a5881de8",
+        "description": "Flow from XOR gateway id7562c2ea-afd1-44f6-80c5-cf9d89c4e325 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id291da22e-73ad-4d52-90e9-35557a8f068f",
+        "description": "Flow from XOR gateway id1519db0f-6886-4f95-b460-6dc3aa944dd2 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id158268c8-c362-4d40-bd93-891e0690b00e",
+        "description": "Flow from XOR gateway idae85503a-6f87-432f-a83c-5af55bc13e8b missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "idca151e09-8f83-41d6-8cac-7e09ffdae9ef",
+        "description": "Flow from XOR gateway id2b41fce0-c73f-4221-9520-74e157f64d06 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "idc57a941b-40f2-4484-98bd-b16227bd0cea",
+        "description": "Flow from XOR gateway idb3d8b36a-7507-43fe-b365-34824fe47fc4 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id088def32-ab44-4c50-a4e9-97a3eab9735e",
+        "description": "Flow from XOR gateway idea65c16c-c58e-4e2b-b059-68c9b312e7da missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id89d62cac-ce41-48b7-9694-2105c5fe3cc3",
+        "description": "Flow from XOR gateway idb3bc9cf6-86c8-4269-9b5f-91651557e550 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "idf99e5eb4-cc45-412a-b6e8-b1820171e81d",
+        "description": "Flow from XOR gateway idfce9d7ae-c678-4600-9aa8-ce325c38e14e missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id5d3ad011-32c4-47f4-8738-d7710d05a1d1",
+        "description": "Flow from XOR gateway idd4d10b26-143c-4374-addd-538ec47b2b85 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id494f9512-a313-41b7-809a-9fc4fbcffc8a",
+        "description": "Flow from XOR gateway id392e3aad-7c6c-45bf-9cf4-83ca8e0b79d2 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "ide95dcffc-a4b0-435d-8387-374d6fad7057",
+        "description": "Flow from XOR gateway idf0c4ce00-22f9-4243-b8cf-b5f3b4ffee5e missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id476f5bde-1bf6-40d4-ae97-9e4bf5774e66",
+        "description": "Flow from XOR gateway idf6039c80-ff77-4193-b23a-2c06c6709e0d missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "idbf7062a5-4966-4b55-8ca5-88387c8280f7",
+        "description": "Flow from XOR gateway id54289350-6942-43c3-8c29-4b4609e6f911 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id06a1f07b-8c51-444e-a866-128d0e5a338c",
+        "description": "Flow from XOR gateway idf39ca063-6a6f-497c-917b-f412011aabd3 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id2e50b9f5-7114-447a-afaa-9a69e19bb553",
+        "description": "Flow from XOR gateway idae85503a-6f87-432f-a83c-5af55bc13e8b missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id9cac6258-fcca-4ca8-aca8-d15dd837bc76",
+        "description": "Flow from XOR gateway id9207a1b2-c42a-4198-9bea-c583047afa30 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "idef6b9a54-74f7-4a96-8104-a7847cb9b23e",
+        "description": "Flow from XOR gateway id014184d2-02ff-4614-8761-6da51efbdac5 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "idb5b0c076-5904-4a8b-91b2-fa05d2b344d9",
+        "description": "Flow from XOR gateway idd402fc0f-b503-4458-8314-2c1d9b2c6fdb missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id1bf4a620-486a-47a0-aae3-75c9a8c97836",
+        "description": "Flow from XOR gateway id50e4a43c-2f45-44bc-9940-926566f667a3 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "iddb39b46e-c04e-497b-aa44-4c01d55574dc",
+        "description": "Flow from XOR gateway idfce9d7ae-c678-4600-9aa8-ce325c38e14e missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "idd7723ea3-1925-411e-9b72-9c7d414f10e2",
+        "description": "Flow from XOR gateway idf1ee5376-d992-4593-86ee-07ea66b1248e missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id7637d82e-3c5a-415d-87d9-e76697c177a9",
+        "description": "Flow from XOR gateway id904a36cc-f7c9-4a8b-ac95-8544dd5696e8 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "iddf5d606b-df2f-4924-9d5e-00bbb56ea0aa",
+        "description": "Flow from XOR gateway idc2b25327-1bc9-44e2-8f5f-ac714cc1286c missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "idb3f250ba-0512-4d18-9415-4455ab17a9a2",
+        "description": "Flow from XOR gateway id46ea1054-7b6e-48c4-83cb-5f5148c0bea9 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id370a8a07-42b2-4232-aee4-afe9d878ba23",
+        "description": "Flow from XOR gateway id392e3aad-7c6c-45bf-9cf4-83ca8e0b79d2 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "idec3b9cd1-578c-41a2-86bb-ff83e22b40ff",
+        "description": "Flow from XOR gateway id8100abb3-1987-49c1-8739-52d319311462 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "idee7af45c-c578-4cb5-ae3a-d0f9c3752976",
+        "description": "Flow from XOR gateway id188fd978-5a63-4c5c-88e7-7a1d35ac8e87 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id6d111e42-69fd-4e10-bdfc-a06252dca28c",
+        "description": "Flow from XOR gateway id03fe391e-6d3c-4e81-829a-bd819b351150 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "id8029c83f-0260-494a-ab4a-8dd9a981e5d2",
+        "description": "Flow from XOR gateway id2b41fce0-c73f-4221-9520-74e157f64d06 missing condition"
+      }
+    ],
+    "stats": {
+      "task_count": 23,
+      "event_count": 2,
+      "gateway_count": 60,
+      "flow_count": 122,
+      "total_nodes": 85,
+      "gateway_density": 0.7058823529411765
+    }
+  },
+  "risks": [
+    "High gateway density may lead to complex process flow and confusion",
+    "Minimal time improvement (<5%) may not justify transformation effort",
+    "High automation may reduce flexibility and human oversight"
+  ],
+  "benefits": [
+    "Process structure is valid and well-formed"
+  ],
+  "score": 0,
+  "recommendation": {
+    "type": "re_iterate_generation",
+    "rationale": "Low score (0/100) indicates the process needs significant revision. Minimal improvements achieved and/or too many quality issues."
+  },
+  "summary": {
+    "improvements_achieved": 1,
+    "risks_identified": 3,
+    "structural_issues": 81,
+    "ready_for_implementation": false
+  }
+}

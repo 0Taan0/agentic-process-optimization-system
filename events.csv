@@ -1,0 +1,4 @@
+case_id,activity,timestamp
+1,Start,2025-08-09T10:00:00Z
+1,Check Inventory,2025-08-09T10:05:00Z
+1,End,2025-08-09T10:10:00Z

@@ -1,0 +1,80 @@
+{
+  "sid": "sid-20251005-171506-ceabeea6",
+  "created_at": "2025-10-05T17:31:25+00:00",
+  "inputs": {
+    "as_is_bpmn": "C:\\DEV\\MA\\data\\sdl\\sid-20251005-171506-ceabeea6\\interpretation\\ist_bpmn_sid-20251005-171506-ceabeea6.bpmn",
+    "to_be_bpmn": "C:\\DEV\\MA\\data\\sdl\\sid-20251005-171506-ceabeea6\\generation\\tobe_bpmn_sid-20251005-171506-ceabeea6_v2_20251005-173112.bpmn"
+  },
+  "time_improvements": {
+    "cycle_mean_delta_s": 45.0,
+    "cycle_p90_delta_s": 58.5
+  },
+  "sla_compliance": {
+    "has_sla": false,
+    "sla_met": false,
+    "on_time_rate": null,
+    "details": {}
+  },
+  "cost_analysis": null,
+  "structural_quality": {
+    "valid": true,
+    "issues": [
+      {
+        "type": "mixed_gateway",
+        "severity": "warning",
+        "element_id": "Gateway_Check",
+        "description": "Gateway Gateway_Check acts as both split and join"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_Check_to_Concept",
+        "description": "Flow from XOR gateway Gateway_Check missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_Check_to_Complete",
+        "description": "Flow from XOR gateway Gateway_Check missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_PostOffer_to_End_Accept",
+        "description": "Flow from XOR gateway Gateway_PostOffer missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_PostOffer_to_Cancel",
+        "description": "Flow from XOR gateway Gateway_PostOffer missing condition"
+      }
+    ],
+    "stats": {
+      "task_count": 10,
+      "event_count": 2,
+      "gateway_count": 4,
+      "flow_count": 19,
+      "total_nodes": 16,
+      "gateway_density": 0.25
+    }
+  },
+  "risks": [
+    "Minimal time improvement (<5%) may not justify transformation effort",
+    "High automation may reduce flexibility and human oversight"
+  ],
+  "benefits": [
+    "Process structure is valid and well-formed"
+  ],
+  "score": 40.0,
+  "recommendation": {
+    "type": "re_iterate_generation",
+    "rationale": "Low score (40/100) indicates the process needs significant revision. Minimal improvements achieved and/or too many quality issues."
+  },
+  "summary": {
+    "improvements_achieved": 1,
+    "risks_identified": 2,
+    "structural_issues": 5,
+    "ready_for_implementation": false
+  }
+}

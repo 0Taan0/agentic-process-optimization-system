@@ -1,0 +1,104 @@
+{
+  "sid": "sid-20251005-181305-2bed20cc",
+  "created_at": "2025-10-05T18:31:46+00:00",
+  "inputs": {
+    "as_is_bpmn": "C:\\DEV\\MA\\data\\sdl\\sid-20251005-181305-2bed20cc\\interpretation\\ist_bpmn_sid-20251005-181305-2bed20cc.bpmn",
+    "to_be_bpmn": "C:\\DEV\\MA\\data\\sdl\\sid-20251005-181305-2bed20cc\\generation\\tobe_bpmn_sid-20251005-181305-2bed20cc_v2_20251005-183132.bpmn"
+  },
+  "time_improvements": {
+    "cycle_mean_delta_s": 60.0,
+    "cycle_p90_delta_s": 78.0
+  },
+  "sla_compliance": {
+    "has_sla": false,
+    "sla_met": false,
+    "on_time_rate": null,
+    "details": {}
+  },
+  "cost_analysis": null,
+  "structural_quality": {
+    "valid": true,
+    "issues": [
+      {
+        "type": "multiple_starts",
+        "severity": "warning",
+        "element_id": null,
+        "description": "Multiple start events found: 2"
+      },
+      {
+        "type": "mixed_gateway",
+        "severity": "warning",
+        "element_id": "Gateway_CheckResult",
+        "description": "Gateway Gateway_CheckResult acts as both split and join"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_8",
+        "description": "Flow from XOR gateway Gateway_CheckResult missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_9",
+        "description": "Flow from XOR gateway Gateway_CheckResult missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_10",
+        "description": "Flow from XOR gateway Gateway_CheckResult missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_11",
+        "description": "Flow from XOR gateway Gateway_PassMerge missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_21",
+        "description": "Flow from XOR gateway Gateway_FailMerge missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_32",
+        "description": "Flow from XOR gateway Gateway_AnalystOutcome missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_33",
+        "description": "Flow from XOR gateway Gateway_AnalystOutcome missing condition"
+      }
+    ],
+    "stats": {
+      "task_count": 17,
+      "event_count": 8,
+      "gateway_count": 7,
+      "flow_count": 38,
+      "total_nodes": 32,
+      "gateway_density": 0.21875
+    }
+  },
+  "risks": [
+    "Minimal time improvement (<5%) may not justify transformation effort",
+    "High automation may reduce flexibility and human oversight"
+  ],
+  "benefits": [
+    "Process structure is valid and well-formed"
+  ],
+  "score": 32.0,
+  "recommendation": {
+    "type": "re_iterate_generation",
+    "rationale": "Low score (32/100) indicates the process needs significant revision. Minimal improvements achieved and/or too many quality issues."
+  },
+  "summary": {
+    "improvements_achieved": 1,
+    "risks_identified": 2,
+    "structural_issues": 9,
+    "ready_for_implementation": false
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "sid": "sid-20251005-185501-15371bc1",
+  "created_at": "2025-10-05T19:15:54+00:00",
+  "inputs": {
+    "as_is_bpmn": "C:\\DEV\\MA\\data\\sdl\\sid-20251005-185501-15371bc1\\interpretation\\ist_bpmn_sid-20251005-185501-15371bc1.bpmn",
+    "to_be_bpmn": "C:\\DEV\\MA\\data\\sdl\\sid-20251005-185501-15371bc1\\generation\\tobe_bpmn_sid-20251005-185501-15371bc1_v2_20251005-191535.bpmn"
+  },
+  "time_improvements": {
+    "cycle_mean_pct": 99.9863236375329,
+    "cycle_p50_pct": 99.98587910457482,
+    "cycle_p90_pct": 99.98888952702643,
+    "cycle_mean_delta_s": -1891867.1490703747,
+    "cycle_p90_delta_s": -3028406.4027374154
+  },
+  "sla_compliance": {
+    "has_sla": false,
+    "sla_met": false,
+    "on_time_rate": null,
+    "details": {}
+  },
+  "cost_analysis": null,
+  "structural_quality": {
+    "valid": false,
+    "issues": [
+      {
+        "type": "multiple_starts",
+        "severity": "warning",
+        "element_id": null,
+        "description": "Multiple start events found: 2"
+      },
+      {
+        "type": "disconnected_element",
+        "severity": "error",
+        "element_id": "SubProcess_Reporting",
+        "description": "Element SubProcess_Reporting (subProcess) is not connected"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_6_PASS",
+        "description": "Flow from XOR gateway Gateway_CheckOutcome missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_7_INCOMP",
+        "description": "Flow from XOR gateway Gateway_CheckOutcome missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_8_DUP",
+        "description": "Flow from XOR gateway Gateway_CheckOutcome missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_9_AMB",
+        "description": "Flow from XOR gateway Gateway_CheckOutcome missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_22_CONF",
+        "description": "Flow from XOR gateway Gateway_DedupDecision missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_23_NOT",
+        "description": "Flow from XOR gateway Gateway_DedupDecision missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_27_RES",
+        "description": "Flow from XOR gateway Gateway_TriageOutcome missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_28_NEED",
+        "description": "Flow from XOR gateway Gateway_TriageOutcome missing condition"
+      }
+    ],
+    "stats": {
+      "task_count": 23,
+      "event_count": 7,
+      "gateway_count": 3,
+      "flow_count": 35,
+      "total_nodes": 33,
+      "gateway_density": 0.09090909090909091
+    }
+  },
+  "risks": [
+    "Process has 1 structural errors that must be fixed",
+    "High automation may reduce flexibility and human oversight"
+  ],
+  "benefits": [
+    "Average cycle time reduced by 100.0%",
+    "90th percentile time improved by 100.0%"
+  ],
+  "score": 52.0,
+  "recommendation": {
+    "type": "re_iterate_generation",
+    "rationale": "Process has 1 structural errors that prevent proper execution. A new version must be generated."
+  },
+  "summary": {
+    "improvements_achieved": 2,
+    "risks_identified": 2,
+    "structural_issues": 10,
+    "ready_for_implementation": false
+  }
+}

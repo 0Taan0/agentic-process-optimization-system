@@ -1,0 +1,55 @@
+{
+  "sid": "sid-20250922-142334-a2d1e9ed",
+  "created_at": "2025-09-22T14:32:26+00:00",
+  "inputs": {
+    "as_is_bpmn": "C:\\DEV\\MA\\data\\sdl\\sid-20250922-142334-a2d1e9ed\\interpretation\\ist_bpmn_sid-20250922-142334-a2d1e9ed.bpmn",
+    "to_be_bpmn": "C:\\DEV\\MA\\data\\sdl\\sid-20250922-142334-a2d1e9ed\\generation\\tobe_bpmn_sid-20250922-142334-a2d1e9ed.bpmn"
+  },
+  "time_improvements": {
+    "cycle_mean_delta_s": 0.0,
+    "cycle_p90_delta_s": 0.0
+  },
+  "sla_compliance": {
+    "has_sla": false,
+    "sla_met": false,
+    "on_time_rate": null,
+    "details": {}
+  },
+  "cost_analysis": null,
+  "structural_quality": {
+    "valid": false,
+    "issues": [
+      {
+        "type": "disconnected_element",
+        "severity": "error",
+        "element_id": "EndEvent_1",
+        "description": "Element EndEvent_1 (endEvent) is not connected"
+      }
+    ],
+    "stats": {
+      "task_count": 26,
+      "event_count": 2,
+      "gateway_count": 2,
+      "flow_count": 167,
+      "total_nodes": 30,
+      "gateway_density": 0.06666666666666667
+    }
+  },
+  "risks": [
+    "Process has 1 structural errors that must be fixed",
+    "Minimal time improvement (<5%) may not justify transformation effort",
+    "High automation may reduce flexibility and human oversight"
+  ],
+  "benefits": [],
+  "score": 40.0,
+  "recommendation": {
+    "type": "re_iterate_generation",
+    "rationale": "Process has 1 structural errors that prevent proper execution. A new version must be generated."
+  },
+  "summary": {
+    "improvements_achieved": 0,
+    "risks_identified": 3,
+    "structural_issues": 1,
+    "ready_for_implementation": false
+  }
+}

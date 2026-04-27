@@ -1,0 +1,99 @@
+{
+  "sid": "sid-20251010-052143-006854c8",
+  "created_at": "2025-10-10T05:53:35+00:00",
+  "inputs": {
+    "as_is_bpmn": "C:\\DEV\\MA\\data\\sdl\\sid-20251010-052143-006854c8\\interpretation\\ist_bpmn_sid-20251010-052143-006854c8.bpmn",
+    "to_be_bpmn": "C:\\DEV\\MA\\data\\sdl\\sid-20251010-052143-006854c8\\generation\\tobe_bpmn_sid-20251010-052143-006854c8_v3_20251010-055324.bpmn"
+  },
+  "time_improvements": {
+    "cycle_mean_delta_s": 170.625,
+    "cycle_p90_delta_s": 221.8125
+  },
+  "sla_compliance": {
+    "has_sla": false,
+    "sla_met": false,
+    "on_time_rate": null,
+    "details": {}
+  },
+  "cost_analysis": null,
+  "structural_quality": {
+    "valid": true,
+    "issues": [
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "sf_gw_yes_to_record",
+        "description": "Flow from XOR gateway gw_check_result missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "sf_gw_no_to_remedfork",
+        "description": "Flow from XOR gateway gw_check_result missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "sf_gw_success_yes_to_record",
+        "description": "Flow from XOR gateway gw_auto_remed_success missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "sf_gw_success_no_to_gwremed",
+        "description": "Flow from XOR gateway gw_auto_remed_success missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "sf_gwremed_to_manual",
+        "description": "Flow from XOR gateway gw_remed_result missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "sf_gwremed_to_record",
+        "description": "Flow from XOR gateway gw_remed_result missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "sf_gwmanual_yes_to_record",
+        "description": "Flow from XOR gateway gw_manual_result missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "sf_gwmanual_no_to_cancel",
+        "description": "Flow from XOR gateway gw_manual_result missing condition"
+      }
+    ],
+    "stats": {
+      "task_count": 14,
+      "event_count": 4,
+      "gateway_count": 8,
+      "flow_count": 31,
+      "total_nodes": 26,
+      "gateway_density": 0.3076923076923077
+    }
+  },
+  "risks": [
+    "High gateway density may lead to complex process flow and confusion",
+    "Minimal time improvement (<5%) may not justify transformation effort",
+    "High automation may reduce flexibility and human oversight"
+  ],
+  "benefits": [
+    "Process structure is valid and well-formed"
+  ],
+  "score": 29.0,
+  "recommendation": {
+    "type": "re_iterate_generation",
+    "rationale": "Low score (29/100) indicates the process needs significant revision. Minimal improvements achieved and/or too many quality issues."
+  },
+  "summary": {
+    "improvements_achieved": 1,
+    "risks_identified": 3,
+    "structural_issues": 8,
+    "ready_for_implementation": false
+  }
+}

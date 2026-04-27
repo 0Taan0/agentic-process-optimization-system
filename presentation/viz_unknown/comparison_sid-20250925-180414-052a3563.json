@@ -1,0 +1,147 @@
+{
+  "sid": "sid-20250925-180414-052a3563",
+  "created_at": "2025-09-25T18:13:06+00:00",
+  "inputs": {
+    "as_is_bpmn": "C:\\DEV\\MA\\data\\sdl\\sid-20250925-180414-052a3563\\interpretation\\ist_bpmn_sid-20250925-180414-052a3563.bpmn",
+    "to_be_bpmn": "C:\\DEV\\MA\\data\\sdl\\sid-20250925-180414-052a3563\\generation\\tobe_bpmn_sid-20250925-180414-052a3563.bpmn"
+  },
+  "time_improvements": {
+    "cycle_mean_delta_s": 15.0,
+    "cycle_p90_delta_s": 19.5
+  },
+  "sla_compliance": {
+    "has_sla": false,
+    "sla_met": false,
+    "on_time_rate": null,
+    "details": {}
+  },
+  "cost_analysis": null,
+  "structural_quality": {
+    "valid": true,
+    "issues": [
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_7",
+        "description": "Flow from XOR gateway Gateway_9 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_9",
+        "description": "Flow from XOR gateway Gateway_1 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_11",
+        "description": "Flow from XOR gateway Gateway_1 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_16",
+        "description": "Flow from XOR gateway Gateway_1 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_17",
+        "description": "Flow from XOR gateway Gateway_8 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_19",
+        "description": "Flow from XOR gateway Gateway_2 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_21",
+        "description": "Flow from XOR gateway Gateway_2 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_22",
+        "description": "Flow from XOR gateway Gateway_6 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_24",
+        "description": "Flow from XOR gateway Gateway_3 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_26",
+        "description": "Flow from XOR gateway Gateway_4 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_28",
+        "description": "Flow from XOR gateway Gateway_3 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_29",
+        "description": "Flow from XOR gateway Gateway_7 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_31",
+        "description": "Flow from XOR gateway Gateway_5 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_33",
+        "description": "Flow from XOR gateway Gateway_5 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_34",
+        "description": "Flow from XOR gateway Gateway_4 missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_35",
+        "description": "Flow from XOR gateway Gateway_3 missing condition"
+      }
+    ],
+    "stats": {
+      "task_count": 20,
+      "event_count": 2,
+      "gateway_count": 10,
+      "flow_count": 40,
+      "total_nodes": 32,
+      "gateway_density": 0.3125
+    }
+  },
+  "risks": [
+    "High gateway density may lead to complex process flow and confusion",
+    "Minimal time improvement (<5%) may not justify transformation effort",
+    "High automation may reduce flexibility and human oversight"
+  ],
+  "benefits": [
+    "Process structure is valid and well-formed"
+  ],
+  "score": 13.0,
+  "recommendation": {
+    "type": "re_iterate_generation",
+    "rationale": "Low score (13/100) indicates the process needs significant revision. Minimal improvements achieved and/or too many quality issues."
+  },
+  "summary": {
+    "improvements_achieved": 1,
+    "risks_identified": 3,
+    "structural_issues": 16,
+    "ready_for_implementation": false
+  }
+}

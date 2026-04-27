@@ -1,0 +1,84 @@
+{
+  "sid": "sid-20251006-034011-26d9886c",
+  "created_at": "2025-10-06T04:05:42+00:00",
+  "inputs": {
+    "as_is_bpmn": "C:\\DEV\\MA\\data\\sdl\\sid-20251006-034011-26d9886c\\interpretation\\ist_bpmn_sid-20251006-034011-26d9886c.bpmn",
+    "to_be_bpmn": "C:\\DEV\\MA\\data\\sdl\\sid-20251006-034011-26d9886c\\generation\\tobe_bpmn_sid-20251006-034011-26d9886c_v2_20251006-040518.bpmn"
+  },
+  "time_improvements": {
+    "cycle_mean_pct": 99.9960362046159,
+    "cycle_p50_pct": 99.99590705849822,
+    "cycle_p90_pct": 99.99678084265042,
+    "cycle_mean_delta_s": -1892050.9230699476,
+    "cycle_p90_delta_s": -3028645.4103999143
+  },
+  "sla_compliance": {
+    "has_sla": false,
+    "sla_met": false,
+    "on_time_rate": null,
+    "details": {}
+  },
+  "cost_analysis": null,
+  "structural_quality": {
+    "valid": true,
+    "issues": [
+      {
+        "type": "mixed_gateway",
+        "severity": "warning",
+        "element_id": "Gateway_Valid",
+        "description": "Gateway Gateway_Valid acts as both split and join"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_S4",
+        "description": "Flow from XOR gateway Gateway_Complete missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_S5",
+        "description": "Flow from XOR gateway Gateway_Complete missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_S9",
+        "description": "Flow from XOR gateway Gateway_Valid missing condition"
+      },
+      {
+        "type": "missing_condition",
+        "severity": "warning",
+        "element_id": "Flow_S10",
+        "description": "Flow from XOR gateway Gateway_Valid missing condition"
+      }
+    ],
+    "stats": {
+      "task_count": 12,
+      "event_count": 3,
+      "gateway_count": 4,
+      "flow_count": 25,
+      "total_nodes": 19,
+      "gateway_density": 0.21052631578947367
+    }
+  },
+  "risks": [
+    "High automation may reduce flexibility and human oversight"
+  ],
+  "benefits": [
+    "Average cycle time reduced by 100.0%",
+    "90th percentile time improved by 100.0%",
+    "Process structure is valid and well-formed"
+  ],
+  "score": 70.0,
+  "recommendation": {
+    "type": "proceed_with_caveats",
+    "rationale": "Process achieves good score (70/100) but has 1 identified risks. Proceed with caution and risk mitigation plan."
+  },
+  "summary": {
+    "improvements_achieved": 3,
+    "risks_identified": 1,
+    "structural_issues": 5,
+    "ready_for_implementation": false
+  }
+}
