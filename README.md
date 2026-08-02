@@ -77,9 +77,9 @@ Lege XES-/XES.GZ-Dateien in einen gut erreichbaren Ordner (z. B. data/bpi_xes/) 
 Das System erstellt beim Lauf eine Session (SID) inkl. Artefakt-Ordner:
 data/sdl/<SID>/ mit Unterordnern uploads/, perception/, interpretation/, generation/, evaluation/, control/.
 
-Tipp: Wenn du ohne UI arbeitest, kopiere die XES vor dem Start nach
+Tipp: Wenn Sie ohne UI arbeitest, kopiere die XES vor dem Start nach
 data/sdl/<neue SID>/uploads/yourlog.xes(.gz) – der Ingestion-Step findet sie dort.
-(Alternativ kannst du in ingestion.py eine Default-Datei konfigurieren.)
+(Alternativ können Sie in ingestion.py eine Default-Datei konfigurieren.)
 
 
 
@@ -97,7 +97,7 @@ python main.py
 
 
 
-Du wirst nach einem Business Context gefragt (z. B. englischer Kurztext).
+Sie werden nach einem Business Context gefragt (z. B. englischer Kurztext).
 
 Der Run erzeugt automatisch eine neue SID und läuft die Phasen durch.
 
@@ -189,7 +189,7 @@ baseline_metrics_<sid>.json wird vor To-Be-Simulation geschrieben – dort nachs
 
 Comparison empfiehlt neue Generation (Verbesserung nicht signifikant).
 
-Wenn du immer Priorisierung willst: in engine.py den Skip entfernen und Prioritization stets ausführen.
+Wenn Sie immer Priorisierung wollen: in engine.py den Skip entfernen und Prioritization stets ausführen.
 
 LLM “erfindet” IDs
 
@@ -211,5 +211,3 @@ XES-Quelle: ingestion.py (Default-Pfad) oder Datei manuell unter data/sdl/<SID>/
 Lizenz / Hinweise
 
 Bitte beachte Lizenzbedingungen der verwendeten Datensätze (BPI-Challenge) und Bibliotheken (PM4Py, OpenAI/LLM-Provider).
-
-Sensible Logs anonymisieren. OPENAI_API_KEY nicht einchecken.
